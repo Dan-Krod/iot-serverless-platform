@@ -1,0 +1,14 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "sensors-stream",
+      "connection": "EVENTHUB_CONNECTION",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ]
+}
